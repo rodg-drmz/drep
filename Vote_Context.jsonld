@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes because this proposal differs from a traditional Treasury grant. Rather than requesting funds for operational expenses or ecosystem development, it proposes a temporary deployment of Treasury-owned capital into an existing Cardano-native protocol with the objective of generating returns while supporting ecosystem growth.\n\nMy support is based primarily on Strike's demonstrated traction. The protocol has already processed significant trading volume, attracted thousands of users, generated meaningful protocol revenue, and established itself as a major source of on-chain trading activity within the Cardano ecosystem. The proposal presents liquidity depth—not product-market fit—as the primary constraint to further growth.\n\nI also appreciate that the proposal is structured as a productive deployment rather than a permanent withdrawal. Treasury ownership remains intact, realized yield is returned during the deployment period, and principal plus remaining yield are scheduled to return to the Treasury at the conclusion of the program. Independent custody, public reporting, third-party assurance, and defined wind-down procedures provide additional safeguards.\n\nI recognize the risks. Treasury capital will be exposed to market conditions, stablecoin risk, execution risk, and the possibility that deployed assets underperform simply holding ADA during a strong market cycle. I also believe governance should carefully consider the precedent created by productive Treasury deployments and apply similar scrutiny to future proposals.\n\nDespite these concerns, I believe this proposal represents a reasonable opportunity to support an existing Cardano success story while exploring whether Treasury capital can be deployed productively to generate ecosystem value and potential returns rather than remaining entirely idle."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

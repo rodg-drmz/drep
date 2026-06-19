@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes on the van Rossem Hard Fork because it delivers meaningful improvements to Cardano's performance, developer capabilities, ledger consistency, and security while minimizing disruption through an intra-era upgrade. The addition of new Plutus primitives, expanded cryptographic functionality, unified built-ins across Plutus versions, improved data handling, and stronger ledger-level validation rules strengthen Cardano's technical foundation and expand what developers can build on-chain. Importantly, these enhancements are paired with extensive testing, security review, and ecosystem readiness requirements to support a smooth transition.\n\nI am also pleased to support a hard fork named in honor of Max van Rossem. Having served alongside Max during the Constitutional Convention in Buenos Aires, I witnessed firsthand his passion for Cardano, governance, and the long-term success of the ecosystem. He was thoughtful, engaged, and deeply committed to building something that would outlast any one individual. Naming this upgrade after Max is a fitting tribute to someone who dedicated so much of his time and energy to Cardano's future, and a reminder that our ecosystem is ultimately built by people willing to contribute, collaborate, and serve."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

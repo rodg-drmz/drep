@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes because this proposal represents one of the strongest examples of real-world adoption currently presented to governance. Rather than asking Cardano to solve a hypothetical future problem, it builds upon an existing operational deployment and seeks to expand a trust layer that is already onboarding farmers, farms, and agricultural data onto Cardano.\n\nWhat I find most compelling is the proposal's focus on creating shared infrastructure rather than a single-purpose application. By combining decentralized identity, verifiable agricultural records, satellite data, credentialing, traceability, and financial access, the project creates a foundation that multiple organizations and future applications can build upon. The principle of \"verify once, use many times\" has the potential to reduce duplication, lower onboarding costs, and create meaningful network effects across agricultural ecosystems.\n\nI also appreciate that this proposal is rooted in existing partnerships and operational experience. The project is already active on Cardano Mainnet, has demonstrated field deployment, and includes clearly identified implementation partners across identity, traceability, certification, and finance. This gives me greater confidence than proposals built primarily on future assumptions.\n\nThe budget request is significant and should be held to a high standard of accountability. I will expect transparent reporting, milestone verification, and evidence that the proposed scale targets are being achieved. However, if Cardano's long-term vision includes onboarding millions of users through practical, economically meaningful applications, then initiatives that connect blockchain infrastructure to real-world industries deserve serious support.\n\nFor these reasons, I believe this proposal represents a meaningful investment in adoption, utility, and the expansion of Cardano's ecosystem beyond traditional crypto audiences."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

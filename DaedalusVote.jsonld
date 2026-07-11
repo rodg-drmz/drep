@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes because Daedalus remains a foundational piece of Cardano's infrastructure. As the ecosystem's only full-node wallet, it provides users with a uniquely self-sovereign experience by validating the blockchain directly, without relying on third-party APIs or backend infrastructure. Maintaining that option strengthens Cardano's resilience, decentralization, and client diversity as the network continues to evolve.\n\nThis proposal aligns with my broader support for maintaining critical ecosystem infrastructure. As major protocol upgrades such as Leios, Peras, and future hard forks are introduced, ensuring that Daedalus remains secure, compatible, and fully operational is essential for the users who depend on it. I also support expanding hardware wallet compatibility, implementing CIP-30 to enable dApp interactions for full-node users, and continuing support for global communities through localization and ongoing maintenance.\n\nWhile Daedalus serves a smaller user base than light wallets, its value cannot be measured solely by user count. It represents an important public good for the Cardano ecosystem: open-source, independently auditable infrastructure that advances decentralization and preserves user choice. For these reasons, I believe continued maintenance and improvement of Daedalus is a worthwhile investment in Cardano's long-term health and resilience.\n"
+  },
+  "hashAlgorithm": "blake2b-256"
+}

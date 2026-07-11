@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting \"abstain\" on this proposal because I support the long-term vision of expanding Cardano's role in real-world payments, but I remain unconvinced that this represents the highest-priority Treasury investment at the present time.\n\nWirex is an established payments company with a strong track record, existing Cardano integrations, and significant experience operating at scale. I recognize the value of improving open-source payment infrastructure, Visa connectivity, and on-chain settlement, and I believe these capabilities will become increasingly important as Cardano's ecosystem grows. However, I am not yet persuaded that payment infrastructure is the primary constraint on adoption today.\n\nMy hesitation is one of timing and prioritization, not opposition. Cardano already has an initial foothold in payment infrastructure, and I would have preferred stronger evidence that existing capabilities have reached meaningful adoption limits before expanding them further through Treasury funding. In my view, growing the user base, increasing real-world applications, and driving broader ecosystem adoption remain the more immediate priorities. As those efforts mature, demand for expanded payment rails may become substantially clearer.\n\nFor these reasons, I am abstaining. I support the direction of the proposal and believe payment infrastructure will play an important role in Cardano's future, but I am not sufficiently convinced that this is the highest-leverage investment for the ecosystem at this stage."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

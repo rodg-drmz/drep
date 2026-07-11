@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes because this proposal represents the kind of real-world adoption I believe Cardano should actively pursue. Rather than funding a concept or prototype, it builds upon a production system that is already live on Cardano and expands an existing business with an established user base. Bringing enterprise ticketing onto Cardano has the potential to generate sustained on-chain activity while introducing thousands of users to the ecosystem through a familiar consumer experience.\n\nWhat I find especially compelling is that this proposal leverages blockchain where it offers clear advantages: verifiable ownership, programmable royalties, transparent secondary markets, anti-scalping mechanisms, and digital identity—all while abstracting away much of the blockchain complexity from end users. If executed well, it demonstrates how Cardano can solve real business problems rather than simply serving as financial infrastructure for crypto-native users.\n\nI also appreciate that the proposal builds upon existing investment, includes milestone-based oversight, commits to an independent security audit, and introduces a revenue-sharing mechanism intended to repay the Treasury over time. While the projected adoption targets should be evaluated carefully and execution will ultimately determine success, I believe supporting enterprise integrations that create recurring utility and expand Cardano's presence in established industries is a worthwhile investment in the ecosystem's long-term growth."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

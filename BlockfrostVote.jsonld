@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting yes because Blockfrost has become one of the most important pieces of public infrastructure within the Cardano ecosystem. It serves as the primary access layer for a large portion of developers, wallets, and decentralized applications, dramatically lowering the barrier to building on Cardano. Preserving that accessibility is essential to maintaining developer momentum and ecosystem growth.\n\nWhat makes this proposal particularly compelling is that it is not simply requesting operational funding. It fundamentally changes Blockfrost's governance model by transitioning it from a commercially owned service into a community-governed, not-for-profit public good. The transfer of its intellectual property, open governance through an elected board, transparent reporting, and a clear path toward long-term sustainability all align with Cardano's principles of decentralization and community stewardship.\n\nI recognize that this is a significant Treasury request and that Blockfrost has previously received ecosystem funding. However, I believe maintaining critical developer infrastructure while reducing long-term dependence on a private entity represents a worthwhile investment. Strong public infrastructure benefits every wallet, dApp, developer, and user building on Cardano, making this an investment in the ecosystem as a whole rather than any single application or company."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

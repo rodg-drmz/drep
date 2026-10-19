@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I am voting no because, while I recognize the potential of real-world asset tokenization and believe it represents an important opportunity for Cardano, I am not convinced that purchasing and holding physical copper is where our Treasury resources should be directed at this stage of ecosystem development.\n\nCardano's immediate priorities should be expanding commercial adoption, attracting users and liquidity, supporting applications with demonstrated demand, and creating sustainable economic activity on the network. This proposal introduces an interesting RWA model, but it does not sufficiently demonstrate how a Treasury-funded copper reserve would translate into meaningful adoption, recurring transactions, or broader ecosystem growth.\n\nI am also concerned about the significant financial exposure and complexity involved. Of the ₳22 million requested, only approximately two-thirds would be allocated toward acquiring copper, while the remainder supports development, custody, operations, and oversight. The Treasury would assume commodity-price risk, ADA exchange-rate risk, and additional technical and custody risks without any guarantee of recovering its original principal.\n\nMy opposition is not to tokenization or the development of RWA infrastructure. I believe these technologies have considerable potential, but I would prefer to see initiatives driven by established commercial demand, committed partners, and clearly demonstrated use cases rather than Treasury-funded commodity acquisition."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

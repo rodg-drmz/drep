@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "I vote no on this proposal in its current form. I value a coordinated Cardano presence at industry events, opportunities for builders to showcase their work, and engagement with developers and potential partners. I also recognise the Foundation’s proposed staff contribution, travel support for ecosystem projects, and public reporting commitments.\n\nHowever, a request for nearly ₳25 million requires a stronger connection between expenditure and measurable ecosystem benefit. The Foundation reports that the previous program exceeded its targets for contacts, developer engagement, and sign-ups. Those results demonstrate reach, but leave important questions about conversion into ongoing development, active users, and implemented partnerships. Foundation’s results summary\n\nThe proposed KPIs remain weighted toward contacts, attendance, presentations, registrations, and collaborations initiated or discussed. These are useful indicators, but definitions of meaningful engagement, follow-up periods, and conversion targets remain insufficiently clear. The commitment to track attributable on-chain transactions is welcome, yet the proposal does not specify a target or explain the attribution methodology.\n\nThe proposal should further clarify how this spending complements the Foundation’s own funded engagement activities, what would proceed without this withdrawal, and what additional outcomes the Treasury would enable.\n\nBefore supporting this level of funding, I would want event-specific success criteria, follow-up measures for developer and user retention, evidence of partnerships progressing beyond initial discussions, and explicit thresholds for reducing or discontinuing underperforming activities. A more focused program with these measures would provide a stronger basis for approval."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
